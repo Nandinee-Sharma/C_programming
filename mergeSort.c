@@ -49,7 +49,7 @@ void printArray(int arr[], int size) {
 }
 int main() {
     int arr[] = {12, 11, 13, 5, 6, 7};
-    int size = sizeof(arr);
+    int size = sizeof(arr)/sizeof(arr[0]);
     printf("Given array: \n");
     printArray(arr, size);
     mergeSort(arr, 0, size - 1);
